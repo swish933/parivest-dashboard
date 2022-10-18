@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,5 +29,12 @@ a {
   body {
     color: white;
     background: black;
+    font-family: 'Lato', sans-serif;
   }
+}
+
+
+
+* {
+  scroll-behavior: smooth;
 }

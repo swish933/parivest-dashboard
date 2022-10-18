@@ -1,7 +1,17 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
+import 'react-datepicker/dist/react-datepicker.css';
+import '../styles/customcalendar.css';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+	const Layout = Component.Layout || EmptyLayout;
+
+	return (
+		<Layout>
+			<Component {...pageProps} />
+		</Layout>
+	);
 }
 
-export default MyApp
+const EmptyLayout = ({ children }) => <>{children}</>;
+
+export default MyApp;
